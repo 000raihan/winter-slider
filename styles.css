@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+.aslide {
+    overflow: hidden;
+    /* display: none; */
+    /* position: static !important; */
+}
+.aslide img {
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   object-position: center;
+}
+.aslider {
+    width: 100%;
+    height: 100%;
+}
+.aslide .text {
+    margin: 0 auto;
+    color: #f8f8f8;
+    text-shadow: 0 0 2px #000;
+    font-weight: bold;
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    font-family: sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    .aslide img{
+        transform: rotate(90deg);
+    }
+}
