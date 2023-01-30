@@ -3,8 +3,19 @@ body{
     overflow: hidden;
 }
 
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+.aslider {
+    width: 100%;
+    height: 100%;
+}
+
 .aslide {
     overflow: hidden;
+    height: 100%;
+    width: 100%;
     /* display: none; */
     /* position: static !important; */
 }
@@ -14,10 +25,7 @@ body{
    object-fit: cover;
    object-position: center;
 }
-.aslider {
-    width: 100%;
-    height: 100%;
-}
+
 .aslide .text {
     margin: 0 auto;
     color: #f8f8f8;
@@ -31,8 +39,20 @@ body{
     font-family: sans-serif;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (orientation: portrait) {
+    /* .container{
+        transform: rotate(90deg);
+        width: 100vh;
+        height: 100vw;
+    } */
     .aslide img{
         transform: rotate(90deg);
+        width: 100vh !important;
+        height: 100vw !important;
+        /* width: 100vh;
+        height: 100vw; */
     }
+    /* .aslide{
+        height: 100vh;
+    } */
 }
