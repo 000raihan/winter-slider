@@ -22,8 +22,8 @@ body{
 .aslide img {
    width: 100vw;
    height: 100vh;
-   object-fit: cover;
-   object-position: center;
+   /* object-fit: cover; */
+   /* object-position: center; */
 }
 
 .aslide .text {
@@ -48,11 +48,12 @@ body{
     .aslide img{
         transform: rotate(90deg);
         width: 100vh !important;
-        height: 100vw !important;
+        height: 100% !important;
         /* width: 100vh;
         height: 100vw; */
     }
-    /* .aslide{
-        height: 100vh;
-    } */
+    .aslide{
+        height: 100vh !important;
+        width: 100vw !important;
+    }
 }
